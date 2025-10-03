@@ -2,15 +2,17 @@
 ````markdown
 # 🧠 Guia de Engenharia de Prompts: Zero, One & Few-Shots
 
-O termo **"shot"** refere-se ao número de **exemplos** que você fornece à IA dentro do seu prompt para ensiná-la
- o que você deseja como resposta.É uma técnica poderosa para guiar o modelo a produzir resultados mais precisos e no formato esperado.
+O termo **"shot"** refere-se ao número de **exemplos** que você fornece à IA dentro do seu prompt
+para ensiná-lao que você deseja como resposta.É uma técnica poderosa para guiar o modelo a
+produzir resultados mais precisos e no formato esperado.
 
 ---
 
 ## 🚀 1. Zero-Shot Prompting (Nenhum Exemplo)
 
 É a forma mais simples e direta de interagir com a IA.
-Você faz uma pergunta ou dá uma instrução sem fornecer nenhum exemplo.O modelo depende inteiramente do seu conhecimento pré-treinado.
+Você faz uma pergunta ou dá uma instrução sem fornecer nenhum exemplo.
+O modelo depende inteiramente do seu conhecimento pré-treinado.
 
 **🗓️ Quando Usar:**
 - Tarefas simples e diretas (resumos, traduções).
