@@ -2,13 +2,15 @@
 ````markdown
 # 🧠 Guia de Engenharia de Prompts: Zero, One & Few-Shots
 
-O termo **"shot"** refere-se ao número de **exemplos** que você fornece à IA dentro do seu prompt para ensiná-la o que você deseja como resposta. É uma técnica poderosa para guiar o modelo a produzir resultados mais precisos e no formato esperado.
+O termo **"shot"** refere-se ao número de **exemplos** que você fornece à IA dentro do seu prompt para ensiná-la
+ o que você deseja como resposta.É uma técnica poderosa para guiar o modelo a produzir resultados mais precisos e no formato esperado.
 
 ---
 
 ## 🚀 1. Zero-Shot Prompting (Nenhum Exemplo)
 
-É a forma mais simples e direta de interagir com a IA. Você faz uma pergunta ou dá uma instrução sem fornecer nenhum exemplo. O modelo depende inteiramente do seu conhecimento pré-treinado.
+É a forma mais simples e direta de interagir com a IA.
+Você faz uma pergunta ou dá uma instrução sem fornecer nenhum exemplo.O modelo depende inteiramente do seu conhecimento pré-treinado.
 
 **🗓️ Quando Usar:**
 - Tarefas simples e diretas (resumos, traduções).
@@ -35,7 +37,8 @@ O componente deve renderizar o nome do usuário em um cabeçalho h2 e o email em
 
 ## 🎯 2. One-Shot Prompting (Um Único Exemplo)
 
-Nesta abordagem, você fornece **um único exemplo** de alta qualidade que demonstra o padrão ou o formato que você espera na resposta. Isso ajuda a "ancorar" o entendimento da IA.
+Nesta abordagem, você fornece **um único exemplo** de alta qualidade 
+que demonstra o padrão ou o formato que você espera na resposta. Isso ajuda a "ancorar" o entendimento da IA.
 
 **🗓️ Quando Usar:**
 
@@ -77,7 +80,8 @@ Crie um componente chamado 'ProductCard' que recebe as props 'productName' e 'pr
 
 ## 📚 3. Few-Shot Prompting (Poucos Exemplos)
 
-Esta é a técnica mais poderosa. Você fornece **vários exemplos (geralmente de 2 a 5)** que ilustram a tarefa, permitindo que a IA aprenda um padrão mais complexo e entenda nuances.
+Esta é a técnica mais poderosa. Você fornece **vários exemplos (geralmente de 2 a 5)** que ilustram
+a tarefa, permitindo que a IA aprenda um padrão mais complexo e entenda nuances.
 
 **🗓️ Quando Usar:**
 
@@ -132,7 +136,8 @@ Ele deve implementar a lógica mostrada nos exemplos. O texto dentro do span dev
 
 ## ⭐ Dica de Especialista
 
-> Comece sempre com um prompt **zero-shot**. Se o resultado não for o esperado, adicione um exemplo (**one-shot**) para guiar o modelo. Se a tarefa for complexa e envolver padrões, invista tempo na criação de múltiplos exemplos (**few-shot**). A engenharia de prompts é um processo iterativo de refinamento.
+> Comece sempre com um prompt **zero-shot**. Se o resultado não for o esperado, adicione um exemplo (**one-shot**) para guiar o modelo.
+Se a tarefa for complexa e envolver padrões, invista tempo na criação de múltiplos exemplos (**few-shot**). A engenharia de prompts é um processo iterativo de refinamento.
 
 ```
 ```
