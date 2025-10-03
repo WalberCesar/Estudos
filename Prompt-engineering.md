@@ -1,52 +1,29 @@
+
 ````markdown
-<div style="font-family: Arial, sans-serif; color: #333;">
+# 🧠 Guia de Engenharia de Prompts: Zero, One & Few-Shots
 
-<h1 style="color: #4A148C; font-size: 28px;">
-  🧠 Guia de Engenharia de Prompts: Zero, One & Few-Shots
-</h1>
-
-<p style="font-size: 16px;">
-  O termo <b style="color: #6A1B9A;">"shot"</b> refere-se ao número de <b>exemplos</b> que você fornece à IA dentro do seu prompt para ensiná-la o que você deseja como resposta. É uma técnica poderosa para guiar o modelo a produzir resultados mais precisos e no formato esperado.
-</p>
+O termo **"shot"** refere-se ao número de **exemplos** que você fornece à IA dentro do seu prompt para ensiná-la o que você deseja como resposta. É uma técnica poderosa para guiar o modelo a produzir resultados mais precisos e no formato esperado.
 
 ---
 
-<h2 style="color: #8E24AA; font-size: 24px;">
-  🚀 1. Zero-Shot Prompting (Nenhum Exemplo)
-</h2>
+## 🚀 1. Zero-Shot Prompting (Nenhum Exemplo)
 
-<p style="font-size: 16px;">
-  É a forma mais simples e direta de interagir com a IA. Você faz uma pergunta ou dá uma instrução sem fornecer nenhum exemplo. O modelo depende inteiramente do seu conhecimento pré-treinado.
-</p>
+É a forma mais simples e direta de interagir com a IA. Você faz uma pergunta ou dá uma instrução sem fornecer nenhum exemplo. O modelo depende inteiramente do seu conhecimento pré-treinado.
 
-<p style="font-size: 16px;">
-  🗓️ <b style="color: #333;">Quando Usar:</b>
-  <ul>
-    <li>Tarefas simples e diretas (resumos, traduções).</li>
-    <li>Quando a tarefa é muito comum.</li>
-    <li>Para testar o conhecimento base do modelo.</li>
-  </ul>
-</p>
+**🗓️ Quando Usar:**
+- Tarefas simples e diretas (resumos, traduções).
+- Quando a tarefa é muito comum.
+- Para testar o conhecimento base do modelo.
 
-<p style="font-size: 16px;">
-  ✅ <b style="color: #2E7D32;">Vantagens:</b>
-  <ul>
-    <li><b>Rápido e Simples:</b> Não exige preparação de exemplos.</li>
-    <li><b>Ótimo para Tarefas Genéricas.</b></li>
-  </ul>
-</p>
+**✅ Vantagens:**
+- **Rápido e Simples:** Não exige preparação de exemplos.
+- **Ótimo para Tarefas Genéricas.**
 
-<p style="font-size: 16px;">
-  ⚠️ <b style="color: #D84315;">Desvantagens:</b>
-  <ul>
-    <li><b>Menos Controle:</b> A IA pode interpretar a tarefa de maneira diferente.</li>
-    <li><b>Pode Falhar em Tarefas Complexas.</b></li>
-  </ul>
-</p>
+**⚠️ Desvantagens:**
+- **Menos Controle:** A IA pode interpretar a tarefa de maneira diferente.
+- **Pode Falhar em Tarefas Complexas.**
 
-<h4>
-  🔧 Exemplo de Prompt Zero-Shot para React.js
-</h4>
+### 🔧 Exemplo de Prompt Zero-Shot para React.js
 
 ```jsx
 Crie um componente funcional em React.js chamado 'UserProfile'.
@@ -56,40 +33,25 @@ O componente deve renderizar o nome do usuário em um cabeçalho h2 e o email em
 
 -----
 
-\<h2 style="color: \#8E24AA; font-size: 24px;"\>
-🎯 2. One-Shot Prompting (Um Único Exemplo)
-\</h2\>
+## 🎯 2. One-Shot Prompting (Um Único Exemplo)
 
-\<p style="font-size: 16px;"\>
-Nesta abordagem, você fornece \<b\>um único exemplo\</b\> de alta qualidade que demonstra o padrão ou o formato que você espera na resposta. Isso ajuda a "ancorar" o entendimento da IA.
-\</p\>
+Nesta abordagem, você fornece **um único exemplo** de alta qualidade que demonstra o padrão ou o formato que você espera na resposta. Isso ajuda a "ancorar" o entendimento da IA.
 
-\<p style="font-size: 16px;"\>
-🗓️ \<b style="color: \#333;"\>Quando Usar:\</b\>
-\<ul\>
-\<li\>Quando você precisa de uma resposta em um formato específico (JSON, HTML).\</li\>
-\<li\>Para tarefas que podem ter múltiplas interpretações.\</li\>
-\</ul\>
-\</p\>
+**🗓️ Quando Usar:**
 
-\<p style="font-size: 16px;"\>
-✅ \<b style="color: \#2E7D32;"\>Vantagens:\</b\>
-\<ul\>
-\<li\>\<b\>Melhora a Precisão:\</b\> Aumenta a chance de obter o resultado desejado.\</li\>
-\<li\>\<b\>Define o Formato:\</b\> Ensina o formato de saída de forma eficaz.\</li\>
-\</ul\>
-\</p\>
+  - Quando você precisa de uma resposta em um formato específico (JSON, HTML).
+  - Para tarefas que podem ter múltiplas interpretações.
 
-\<p style="font-size: 16px;"\>
-⚠️ \<b style="color: \#D84315;"\>Desvantagens:\</b\>
-\<ul\>
-\<li\>\<b\>O Exemplo Pode Limitar:\</b\> Um exemplo ruim pode enviesar a resposta.\</li\>
-\</ul\>
-\</p\>
+**✅ Vantagens:**
 
-\<h4\>
-🔧 Exemplo de Prompt One-Shot para React.js
-\</h4\>
+  - **Melhora a Precisão:** Aumenta a chance de obter o resultado desejado.
+  - **Define o Formato:** Ensina o formato de saída de forma eficaz.
+
+**⚠️ Desvantagens:**
+
+  - **O Exemplo Pode Limitar:** Um exemplo ruim pode enviesar a resposta.
+
+### 🔧 Exemplo de Prompt One-Shot para React.js
 
 ```jsx
 Eu preciso criar um componente de card em React.
@@ -113,42 +75,27 @@ Crie um componente chamado 'ProductCard' que recebe as props 'productName' e 'pr
 
 -----
 
-\<h2 style="color: \#8E24AA; font-size: 24px;"\>
-📚 3. Few-Shot Prompting (Poucos Exemplos)
-\</h2\>
+## 📚 3. Few-Shot Prompting (Poucos Exemplos)
 
-\<p style="font-size: 16px;"\>
-Esta é a técnica mais poderosa. Você fornece \<b\>vários exemplos (geralmente de 2 a 5)\</b\> que ilustram a tarefa, permitindo que a IA aprenda um padrão mais complexo e entenda nuances.
-\</p\>
+Esta é a técnica mais poderosa. Você fornece **vários exemplos (geralmente de 2 a 5)** que ilustram a tarefa, permitindo que a IA aprenda um padrão mais complexo e entenda nuances.
 
-\<p style="font-size: 16px;"\>
-🗓️ \<b style="color: \#333;"\>Quando Usar:\</b\>
-\<ul\>
-\<li\>Tarefas complexas que exigem reconhecimento de padrões.\</li\>
-\<li\>Quando a lógica da tarefa precisa ser inferida a partir dos exemplos.\</li\>
-\<li\>Para garantir um estilo de código consistente.\</li\>
-\</ul\>
-\</p\>
+**🗓️ Quando Usar:**
 
-\<p style="font-size: 16px;"\>
-✅ \<b style="color: \#2E7D32;"\>Vantagens:\</b\>
-\<ul\>
-\<li\>\<b\>Alta Precisão e Confiabilidade:\</b\> Reduz drasticamente a ambiguidade.\</li\>
-\<li\>\<b\>Ideal para Lógica Complexa:\</b\> Permite que o modelo "aprenda" a lógica.\</li\>
-\</ul\>
-\</p\>
+  - Tarefas complexas que exigem reconhecimento de padrões.
+  - Quando a lógica da tarefa precisa ser inferida a partir dos exemplos.
+  - Para garantir um estilo de código consistente.
 
-\<p style="font-size: 16px;"\>
-⚠️ \<b style="color: \#D84315;"\>Desvantagens:\</b\>
-\<ul\>
-\<li\>\<b\>Mais Trabalhoso:\</b\> Exige a criação de múltiplos exemplos de qualidade.\</li\>
-\<li\>\<b\>Prompt Mais Longo:\</b\> Consome mais tokens.\</li\>
-\</ul\>
-\</p\>
+**✅ Vantagens:**
 
-\<h4\>
-🔧 Exemplo de Prompt Few-Shot para React.js
-\</h4\>
+  - **Alta Precisão e Confiabilidade:** Reduz drasticamente a ambiguidade.
+  - **Ideal para Lógica Complexa:** Permite que o modelo "aprenda" a lógica.
+
+**⚠️ Desvantagens:**
+
+  - **Mais Trabalhoso:** Exige a criação de múltiplos exemplos de qualidade.
+  - **Prompt Mais Longo:** Consome mais tokens.
+
+### 🔧 Exemplo de Prompt Few-Shot para React.js
 
 ```jsx
 Eu quero criar um componente React que renderiza um selo de status com cores diferentes com base em uma prop 'status'.
@@ -173,28 +120,19 @@ Ele deve implementar a lógica mostrada nos exemplos. O texto dentro do span dev
 
 -----
 
-\<h2 style="color: \#4A148C; font-size: 24px;"\>
-📋 Resumo Comparativo
-\</h2\>
+## 📋 Resumo Comparativo
 
-| Tipo de Prompt | Nº de Exemplos | Ideal Para                                       | Vantagem Principal                                |
-| :------------- | :------------: | :----------------------------------------------- | :------------------------------------------------ |
-| \<b style="color:\#0D47A1"\>🚀 Zero-Shot\</b\> | 0              | Tarefas simples, perguntas gerais, resumos.      | Rapidez e simplicidade.                           |
-| \<b style="color:\#0D47A1"\>🎯 One-Shot\</b\> | 1              | Definir um formato de saída específico, clareza. | Bom equilíbrio entre esforço e controle.          |
-| \<b style="color:\#0D47A1"\>📚 Few-Shot\</b\> | 2+             | Tarefas complexas, reconhecimento de padrões.    | Máxima precisão e confiabilidade para tarefas. |
+| Tipo de Prompt | Nº de Exemplos | Ideal Para | Vantagem Principal |
+| :--- | :---: | :--- | :--- |
+| **🚀 Zero-Shot** | 0 | Tarefas simples, perguntas gerais, resumos. | Rapidez e simplicidade. |
+| **🎯 One-Shot** | 1 | Definir um formato de saída específico, clareza. | Bom equilíbrio entre esforço e controle. |
+| **📚 Few-Shot** | 2+ | Tarefas complexas, reconhecimento de padrões. | Máxima precisão e confiabilidade para tarefas. |
 
-<br>
+-----
 
-\<div style="background-color: \#F3E5F5; border-left: 5px solid \#8E24AA; padding: 15px; margin-top: 20px; border-radius: 5px;"\>
-\<h3 style="margin-top: 0; color: \#4A148C;"\>
-⭐ Dica de Especialista
-\</h3\>
-\<p style="font-size: 16px; margin-bottom: 0;"\>
-Comece sempre com um prompt \<b\>zero-shot\</b\>. Se o resultado não for o esperado, adicione um exemplo (\<b\>one-shot\</b\>) para guiar o modelo. Se a tarefa for complexa e envolver padrões, invista tempo na criação de múltiplos exemplos (\<b\>few-shot\</b\>). A engenharia de prompts é um processo iterativo de refinamento.
-\</p\>
-\</div\>
+## ⭐ Dica de Especialista
 
-\</div\>
+> Comece sempre com um prompt **zero-shot**. Se o resultado não for o esperado, adicione um exemplo (**one-shot**) para guiar o modelo. Se a tarefa for complexa e envolver padrões, invista tempo na criação de múltiplos exemplos (**few-shot**). A engenharia de prompts é um processo iterativo de refinamento.
 
 ```
 ```
