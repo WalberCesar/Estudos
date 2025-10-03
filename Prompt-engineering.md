@@ -1,9 +1,3 @@
-Com certeza\! Preparei uma versão aprimorada da resposta anterior, formatada como um arquivo Markdown.
-
-Para conseguir a personalização de cores e fontes, utilizei tags HTML dentro do Markdown. A maioria dos visualizadores de Markdown modernos (como os do VS Code, GitHub, Notion, etc.) renderiza esse código corretamente.
-
-Copie e cole o conteúdo abaixo em um arquivo com a extensão `.md` (por exemplo, `guia_prompts.md`) e abra-o em um visualizador compatível para ver o resultado final.
-
 ````markdown
 <div style="font-family: Arial, sans-serif; color: #333;">
 
