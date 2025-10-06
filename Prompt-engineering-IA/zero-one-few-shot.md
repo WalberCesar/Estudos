@@ -35,6 +35,16 @@ Este componente deve receber um objeto 'user' como prop, contendo 'name' e 'emai
 O componente deve renderizar o nome do usuário em um cabeçalho h2 e o email em um parágrafo p.
 ````
 
+### 🔧 In-Context Instruction Learning
+
+PERSONA + FORMATO + OBJETIVO
+
+"Você é um especialista em Go. REscreva dois parágrafs explicando o que é uma goroutine, como ela é usada e quais são suas limitações. Seja claro, técnico e direto."
+
+- Especificar o papel do modelp("Você é um especialista em...")
+- Especificar a saida desejada ("Responda em tópicos" ou "Formato JSON")
+- Garantir que o modelo compreenda a meta ("sEU OBJETIVO É....")
+
 -----
 
 ## 🎯 2. One-Shot Prompting (Um Único Exemplo)
