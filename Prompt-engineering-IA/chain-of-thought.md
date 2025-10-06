@@ -66,6 +66,8 @@ As regras de renderização são:
 
 
 ### Exemplo 2: Prompt com Chain-of-Thought (CoT)
+É SEMPRE INTERESSANTE PEDIR PARA A IA "PENSAR" NO QUE ELA IRA FAZER ANTES DE EXECUTAR A TAREFA.
+
 
 Este prompt guia a IA, quebrando o problema em uma sequência lógica, o que quase sempre resulta em um código mais robusto e correto.
 
