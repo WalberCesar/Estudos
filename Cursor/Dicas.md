@@ -1,0 +1,1 @@
+- criar uma pasta docs para o projeto e colocar nela arquivos que servirão de contexto para o projeto. 
