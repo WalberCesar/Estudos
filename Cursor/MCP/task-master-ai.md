@@ -10,7 +10,7 @@ Este é um resumo objetivo de como instalar e configurar o MCP `task-master-ai` 
 
 ## 1. Pré-requisitos: Chaves de API
 
-[cite_start]O Task Master utiliza modelos de IA e requer **pelo menos uma** chave de API de um provedor suportado para funcionar[.
+O Task Master utiliza modelos de IA e requer **pelo menos uma** chave de API de um provedor suportado para funcionar.
 
 * **Provedores Mínimos Necessários (pelo menos um):**
     * Anthropic (Claude) 
